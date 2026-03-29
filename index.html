@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité - One Second Left</title>
+    <style>
+        :root {
+            --bg-color: #05050A;
+            --container-bg: #11111A;
+            --text-main: #E0E0E0;
+            --accent-cyan: #00E5FF;
+            --accent-pink: #FF3C5F;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: var(--container-bg);
+            max-width: 800px;
+            margin: 40px 20px;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 229, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        h1 {
+            color: var(--accent-pink);
+            text-align: center;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--accent-cyan);
+            border-bottom: 2px solid rgba(0, 229, 255, 0.2);
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: #FFA500;
+        }
+
+        p, ul {
+            font-size: 1.05em;
+            color: #BBBBBB;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--accent-pink);
+            text-decoration: underline;
+        }
+
+        .update-date {
+            text-align: center;
+            font-size: 0.9em;
+            color: #888;
+            margin-bottom: 40px;
+        }
+
+        .highlight {
+            background-color: rgba(255, 60, 95, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--accent-pink);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Politique de Confidentialité</h1>
+    <div class="update-date">Dernière mise à jour : 29 Mars 2026</div>
+
+    <p>Bienvenue sur <strong>One Second Left</strong>. La protection de vos données privées est notre priorité absolue. Ce document explique quelles données nous collectons, comment nous les utilisons, et comment vous pouvez contrôler ces informations.</p>
+
+    <h2>1. Données Collectées</h2>
+    <p>L'application utilise les services de Google (Firebase et AdMob). Selon votre mode d'utilisation, certaines données peuvent être collectées :</p>
+    
+    <h3>A. Si vous jouez en Mode Invité (Anonyme)</h3>
+    <ul>
+        <li><strong>Identifiant unique (UID) :</strong> Un identifiant Firebase généré aléatoirement pour sauvegarder votre meilleur score localement de façon anonyme.</li>
+        <li><strong>Identifiants publicitaires :</strong> Google AdMob peut collecter des identifiants d'appareils et des données d'interaction pour vous afficher des publicités (soumises aux paramètres de non-personnalisation pour respecter les directives familiales).</li>
+    </ul>
+
+    <h3>B. Si vous jouez avec Google Sign-In</h3>
+    <ul>
+        <li><strong>Adresse E-mail :</strong> Utilisée exclusivement pour authentifier votre compte via Firebase Auth. Elle n'est <span class="highlight">jamais</span> affichée publiquement.</li>
+        <li><strong>Nom d'affichage et Photo de profil :</strong> Récupérés depuis votre compte Google pour être affichés dans le classement mondial (Leaderboard).</li>
+        <li><strong>Données de Jeu :</strong> Votre score maximum, votre niveau atteint et votre nombre de clics exacts, sauvegardés sur nos serveurs Firestore sécurisés pour le classement.</li>
+    </ul>
+
+    <h2>2. Utilisation de vos Données</h2>
+    <p>Vos données ne sont utilisées que pour le fonctionnement propre de l'application :</p>
+    <ul>
+        <li>Vérifier votre identité (Firebase Auth).</li>
+        <li>Sauvegarder votre progression et la synchroniser sur vos appareils.</li>
+        <li>Alimenter le classement mondial des joueurs.</li>
+        <li>Fournir un affichage publicitaire permettant de maintenir le jeu gratuit.</li>
+    </ul>
+
+    <h2>3. Partage d'Informations</h2>
+    <p>Nous ne <span class="highlight">vendons ni ne louons jamais</span> vos informations personnelles à des tiers. Les seules entités avec lesquelles les données sont partagées sont :</p>
+    <ul>
+        <li><strong>Google Cloud (Firebase / Firestore) :</strong> Hébergement de la base de données et gestion d'authentification.</li>
+        <li><strong>Google AdMob :</strong> Réseau publicitaire (avec conformité Child-Directed / non-personnalisé selon le paramétrage standard G-rating).</li>
+    </ul>
+
+    <h2>4. Droit de Suppression et de Contrôle</h2>
+    <p>Vous êtes maître de vos données. L'application intègre une option directe de suppression de vos données :</p>
+    <ul>
+        <li>Allez dans les paramètres de l'application en cliquant sur l'icône d'engrenage.</li>
+        <li>Descendez et cliquez sur le bouton rouge <strong>"SUPPRIMER MON COMPTE ET MES DONNÉES"</strong>.</li>
+        <li>Cette action est immédiate et irréversible : l'intégralité de vos scores Firestore et de votre profil Firebase Auth seront instantanément et définitivement effacés.</li>
+    </ul>
+
+    <h2>5. Sécurité</h2>
+    <p>Nous utilisons l'infrastructure ultra-sécurisée de Google Firebase. Toutes les transmissions de données (authentification, intégration des scores) sont chiffrées via les protocoles TLS/HTTPS.</p>
+
+    <h2>6. Contact</h2>
+    <p>Si vous avez des questions ou des inquiétudes concernant cette politique de confidentialité, vous pouvez nous contacter à l'adresse e-mail de support définie sur notre fiche Google Play Store.</p>
+</div>
+
+</body>
+</html>
